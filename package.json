@@ -1,0 +1,32 @@
+{
+  "name": "dungeon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "nodemon -e ts --exec \"npm run build&& node dist/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGoodnight/node-dungeon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AGoodnight/node-dungeon/issues"
+  },
+  "homepage": "https://github.com/AGoodnight/node-dungeon#readme",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
