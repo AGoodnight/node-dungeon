@@ -1,4 +1,7 @@
-type Creature = {
+import { Sequelize, DataTypes, Model } from 'sequelize';
+const db = new Sequelize()
+
+export type Creature = {
     ID: string;
     Alive: boolean;
     HitPoints: number;
@@ -11,7 +14,7 @@ type Creature = {
     Name: string;
 };
 
-interface ICreature {
+export interface ICreature {
     Summon(): void;
     Kill(): void;
     IsAlive(): boolean;

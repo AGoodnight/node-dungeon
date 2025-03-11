@@ -5,8 +5,9 @@ import { createCreatures } from './factories'
 export const router = express.Router()
 
 router.get("/random", (req: Request, res: Response) => {
-    req.query.limit
-    res.json(getCreatures())
+    // if(req.query.amount)
+    // req.query.amount ? parseInt(,10) :
+    res.json(getCreatures(12))
 })
 
 router.get("/:id", (req: Request, res: Response) => {
@@ -16,8 +17,8 @@ router.get("/:id", (req: Request, res: Response) => {
     })
 })
 
-function getCreatures() {
-    return createCreatures(10)
+function getCreatures(amount: number) {
+    return createCreatures(amount)
 }
 
 export default router

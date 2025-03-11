@@ -1,3 +1,4 @@
+import { Sequelize } from "sequelize";
 import { generateName } from "./_generators/name.generator";
 
 export function createCreatures(amt: number) {
