@@ -9,8 +9,8 @@ export type Creature = {
     X: number;
     Y: number;
     Category: string;
-    TimeCreated: number;
-    TimeModified: number;
+    createdAt: number;
+    updatedAt: number;
     Name: string;
 };
 

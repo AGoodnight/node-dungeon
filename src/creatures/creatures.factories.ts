@@ -1,5 +1,4 @@
-import { Sequelize } from "sequelize";
-import { generateName } from "./_generators/name.generator";
+import { generateName } from "./name.generator";
 
 export function createCreatures(amt: number) {
     const creatures = [];
@@ -16,8 +15,8 @@ export function createCreatures(amt: number) {
             X: Math.floor(Math.random() * 20),
             Y: Math.floor(Math.random() * 20),
             Category: "Creature",
-            TimeCreated: now,
-            TimeModified: now,
+            createdAt: now,
+            updatedAt: now,
             Name: generateName(seed), // Assuming you have a generateName function
         };
 

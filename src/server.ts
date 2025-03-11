@@ -1,13 +1,15 @@
 import express, { Request, Response } from "express"
 import chalk from "chalk"
-import creatures from "./creatures"
+import { CreaturesAPI, router } from "./creatures/creatures"
 import { logger } from "./middleware/logger"
-import { Sequelize, Dialect, OperatorsAliases } from "sequelize"
+import { Sequelize, Dialect } from "sequelize"
+import { ORM } from './dataLayer/orm'
+import creatureModels from './models/creature.model'
 
 const dbConfig = {
     HOST: "localhost",
-    USER: "root",
-    PASSWORD: "123456",
+    USER: "superuser",
+    PASSWORD: "12345",
     DB: "dungeon",
     dialect: <Dialect>"postgres",
     pool: {
@@ -18,23 +20,12 @@ const dbConfig = {
     }
 };
 
-export const sequelize = new Sequelize(
-    dbConfig.DB,
-    dbConfig.USER,
-    dbConfig.PASSWORD, {
-    host: dbConfig.HOST,
-    dialect: dbConfig.dialect,
-    pool: {
-        max: dbConfig.pool.max,
-        min: dbConfig.pool.min,
-        acquire: dbConfig.pool.acquire,
-        idle: dbConfig.pool.idle
-    }
-})
-
 const app = express()
+export const dl = new ORM(dbConfig, [
+    creatureModels
+])
 app.use(logger)
-app.use("/creatures", creatures)
+app.use("/creatures", new CreaturesAPI(dl, router).router)
 
 app.route("/")
     .get((_req: Request, res: Response) => {
@@ -43,6 +34,6 @@ app.route("/")
 
 app.listen(8080, () => {
     console.log(chalk.magenta("Syncing Database..."))
-    sequelize.sync()
+    dl.sequelize.sync()
     console.log(chalk.green("Running Server at localhost:8080"))
 })
