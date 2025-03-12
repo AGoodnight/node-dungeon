@@ -24,6 +24,7 @@ const app = express()
 export const dl = new ORM(dbConfig, [
     creatureModels
 ])
+app.use(express.json())
 app.use(logger)
 app.use("/creatures", new CreaturesAPI(dl, router).router)
 

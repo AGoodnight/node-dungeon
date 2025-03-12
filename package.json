@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AGoodnight/node-dungeon#readme",
   "description": "",
   "dependencies": {
+    "ajv": "^8.17.1",
     "chalk": "^5.4.1",
     "express": "^4.21.2",
     "pg": "^8.13.3",

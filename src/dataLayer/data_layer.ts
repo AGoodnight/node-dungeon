@@ -1,11 +1,5 @@
-import { Model, ModelStatic, Sequelize } from "sequelize";
-import { SModel } from "./data_layer.types";
-
-enum modelNames {
-    Creature = "Creature"
-}
-
-type modelDict = Record<modelNames, ModelStatic<Model<any, any>>>
+import { Sequelize } from "sequelize";
+import { modelDict, modelNames, SModel } from "./data_layer.types";
 
 export class DataLayer {
 
