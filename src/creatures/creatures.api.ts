@@ -1,8 +1,6 @@
 import express, { NextFunction, Router } from "express"
 import { Request, Response } from 'express'
 import { createCreatures } from './creatures.factories'
-import { dl } from "../server"
-import { DataLayer } from "../dataLayer/data_layer"
 import { ORM } from "../dataLayer/orm"
 import { modelDict } from "../dataLayer/data_layer.types"
 import { Creature } from "./creatures.types"
@@ -31,17 +29,22 @@ export class CreaturesAPI {
     }
 
     private _create() {
-        router.get("/random", async (req: Request, res: Response) => {
-            // if(req.query.amount)
-            // req.query.amount ? parseInt(,10) :
-            res.json(getCreatures(12))
+        router.get("/", async (req: Request, res: Response, next: NextFunction) => {
+            try {
+                const allCreatures = await this.models.creature.findAll()
+                res.status(200)
+                res.send(allCreatures)
+            } catch (e) {
+                next(e)
+            }
+
         })
 
         router.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
             const id = req.params.id
 
             try {
-                const one = await this.models.Creature.findByPk(id.toString())
+                const one = await this.models.creature.findByPk(id.toString())
                 if (!one) {
                     res.status(404)
                     res.send(`No Creature found with ID ${id}`)
@@ -64,14 +67,15 @@ export class CreaturesAPI {
 
             if (validate(body)) {
                 const c = <Creature>{
+                    ...createCreatures(1)[0],
                     ...body
                 }
+                console.log(c)
                 try {
-                    const response = await this.models.Creature.build(c)
-                    console.log(response)
+                    const success: any = await this.models.creature.create(c)
                     res.status(200)
-                    res.send(`Creature created with id ${response.dataValues.ID}`)
-                } catch (e) {
+                    res.send(`Creature created with id ${success.id}`)
+                } catch (e: any) {
                     next(e)
                 }
             } else {

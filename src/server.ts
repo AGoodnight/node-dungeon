@@ -1,10 +1,11 @@
 import express, { Request, Response } from "express"
 import chalk from "chalk"
-import { CreaturesAPI, router } from "./creatures/creatures"
+import { CreaturesAPI, router } from "./creatures/creatures.api"
 import { logger } from "./middleware/logger"
 import { Sequelize, Dialect } from "sequelize"
 import { ORM } from './dataLayer/orm'
 import creatureModels from './models/creature.model'
+import errorHandler from "./middleware/error-handler"
 
 const dbConfig = {
     HOST: "localhost",
@@ -25,8 +26,9 @@ export const dl = new ORM(dbConfig, [
     creatureModels
 ])
 app.use(express.json())
-app.use(logger)
 app.use("/creatures", new CreaturesAPI(dl, router).router)
+app.use(logger)
+app.use(errorHandler)
 
 app.route("/")
     .get((_req: Request, res: Response) => {

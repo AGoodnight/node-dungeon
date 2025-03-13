@@ -1,17 +1,12 @@
-import { Sequelize, DataTypes, Model } from 'sequelize';
-const db = new Sequelize()
-
 export type Creature = {
-    ID: string;
-    Alive: boolean;
-    HitPoints: number;
-    Initiative: number;
-    X: number;
-    Y: number;
-    Category: string;
-    createdAt: number;
-    updatedAt: number;
-    Name: string;
+    id: string;
+    alive: boolean;
+    hitpoints: number;
+    initiative: number;
+    x: number;
+    y: number;
+    category: string;
+    name: string;
 };
 
 export interface ICreature {

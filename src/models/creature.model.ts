@@ -2,57 +2,51 @@ import { DataTypes } from "sequelize";
 import { SModel } from "../dataLayer/data_layer.types";
 
 export default <SModel<any>>{
-    name: 'Creature',
+    name: 'creature',
     model: {
-        ID: {
+        id: {
             type: DataTypes.UUID, // Or DataTypes.STRING, depending on your ID generation
             primaryKey: true,
-            allowNull: false,
         },
-        Alive: {
+        alive: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
             defaultValue: true
         },
-        HitPoints: {
+        hitpoints: {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 10
         },
-        Initiative: {
+        initiative: {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 0
         },
-        X: {
+        x: {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 0
         },
-        Y: {
+        y: {
             type: DataTypes.INTEGER,
             defaultValue: 0
         },
-        Category: {
+        category: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        createdAt: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        updatedAt: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        Name: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
     },
     options: {
-        tableName: 'Creatures',
+        tableName: 'creatures',
         timestamps: true,
+        freezeTableName: true
     }
 }
+
+
 

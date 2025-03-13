@@ -1,7 +1,7 @@
 import { Attributes, Model, ModelAttributes, ModelOptions, ModelStatic } from "sequelize"
 
 export enum modelNames {
-    Creature = "Creature"
+    creature = "creature"
 }
 
 export type SModel<M extends Model, TAttributes = Attributes<M>> = {

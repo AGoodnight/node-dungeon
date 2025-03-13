@@ -1,16 +1,16 @@
 -- Creature Table Creation Statement (PostgreSQL)
 
-CREATE TABLE Creatures (
-    ID UUID PRIMARY KEY,
-    Alive BOOLEAN NOT NULL,
-    HitPoints INTEGER NOT NULL,
-    Initiative INTEGER NOT NULL,
-    X INTEGER NOT NULL,
-    Y INTEGER NOT NULL,
-    Category VARCHAR(255) NOT NULL,
-    Name VARCHAR(255) NOT NULL,
-    createdAt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+CREATE TABLE "creatures" (
+    ID UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(255) NOT NULL,
+    alive BOOLEAN NOT NULL,
+    hitpoints INTEGER NOT NULL,
+    initiative INTEGER NOT NULL,
+    x INTEGER NOT NULL,
+    y INTEGER NOT NULL,
+    category VARCHAR(255) NOT NULL,
+    createdat TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updatedat TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Example of how to add a trigger to update TimeModified automatically
@@ -19,7 +19,7 @@ CREATE TABLE Creatures (
 CREATE OR REPLACE FUNCTION update_time_modified()
 RETURNS TRIGGER AS $$
 BEGIN
-    NEW.TimeModified = EXTRACT(EPOCH FROM now());
+    NEW.updatedat = EXTRACT(EPOCH FROM now());
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
@@ -35,7 +35,7 @@ EXECUTE FUNCTION update_time_modified();
 CREATE OR REPLACE FUNCTION set_time_created()
 RETURNS TRIGGER AS $$
 BEGIN
-    NEW.createdAt = EXTRACT(EPOCH FROM now());
+    NEW.createdat = EXTRACT(EPOCH FROM now());
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
@@ -43,7 +43,7 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER set_creatures_time_created
 BEFORE INSERT ON Creatures
 FOR EACH ROW
-WHEN (NEW.createdAt IS NULL)
+WHEN (NEW.createdat IS NULL)
 EXECUTE FUNCTION set_time_created();
 
 -- Example of how to create an index on the Creature category.
