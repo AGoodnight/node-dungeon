@@ -1,88 +1,83 @@
-import express, { NextFunction, Router } from "express"
+import express, { NextFunction } from "express"
 import { Request, Response } from 'express'
-import { createCreatures } from './creatures.factories'
 import { ORM } from "../dataLayer/orm"
 import { modelDict } from "../dataLayer/data_layer.types"
 import { Creature } from "./creatures.types"
-import Ajv from "ajv/dist/2020"
-import creatureSchema from '../schemas/creature.schema.json'
+import { creatureBodyValidatorMW, creatureQueryValidatorMW } from "./creature.validator"
+import { ValidationError } from "sequelize"
 
-export const router = express.Router()
-
-function getCreatures(amount: number) {
-    return createCreatures(amount)
-}
 
 export class CreaturesAPI {
     models: modelDict
-    _validator: Ajv
-    constructor(private dl: ORM, public router: Router) {
-        this.models = dl.dataModel.models
-        this._validator = new Ajv()
+    router = express.Router();
 
-        this._addSchemas()
+    constructor(dl: ORM) {
+        this.models = dl.dataModel.models
         this._create()
     }
 
-    private _addSchemas() {
-        this._validator.addSchema(creatureSchema, "creature")
+    private async _queryCreatures(req: Request, res: Response, next: NextFunction) {
+        const matchedCreatures = await this.models.creature.findAll({
+            where: {
+                ...req.query
+            }
+        });
+        res.status(200);
+        if (matchedCreatures.length > 0) {
+            res.send(matchedCreatures);
+        } else {
+            res.send({ "message": "no creatures found" })
+        }
+    }
+
+    private async _getAllCreatures(req: Request, res: Response, next: NextFunction) {
+        const allCreatures = await this.models.creature.findAll();
+        res.status(200);
+        res.send(allCreatures);
     }
 
     private _create() {
-        router.get("/", async (req: Request, res: Response, next: NextFunction) => {
+        this.router.get("/", creatureQueryValidatorMW, (req: Request, res: Response, next: NextFunction) => {
             try {
-                const allCreatures = await this.models.creature.findAll()
-                res.status(200)
-                res.send(allCreatures)
+                if (!req.query) {
+                    this._getAllCreatures(req, res, next)
+                } else {
+                    this._queryCreatures(req, res, next)
+                }
             } catch (e) {
                 next(e)
             }
-
         })
 
-        router.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
-            const id = req.params.id
 
+        this.router.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
             try {
-                const one = await this.models.creature.findByPk(id.toString())
-                if (!one) {
+                const id = req.params.id
+                const queriedResource = await this.models.creature.findByPk(id.toString())
+                if (!queriedResource) {
                     res.status(404)
-                    res.send(`No Creature found with ID ${id}`)
+                    res.json({ status: "errors", code: 404, errors: [`No Creature found with ID ${id}`] })
                 }
                 res.status(200)
-                res.send(one)
+                res.send(queriedResource)
             } catch (e) {
                 next(e)
             }
         })
 
-        router.post("/", async (req: Request, res: Response, next: NextFunction) => {
-            const body = req.body
-            const validate = this._validator.getSchema("creature")
-
-            if (!validate) {
-                next("No Schema is associated with this payload -- Invalid Payload")
-                return;
-            }
-
-            if (validate(body)) {
-                const c = <Creature>{
-                    ...createCreatures(1)[0],
+        this.router.post("/", creatureBodyValidatorMW, async (req: Request, res: Response, next: NextFunction) => {
+            try {
+                const body = req.body
+                const creature = <Creature>{
+                    id: crypto.randomUUID(),
                     ...body
                 }
-                console.log(c)
-                try {
-                    const success: any = await this.models.creature.create(c)
-                    res.status(200)
-                    res.send(`Creature created with id ${success.id}`)
-                } catch (e: any) {
-                    next(e)
-                }
-            } else {
-                next("The POST json does not match the Schema -- Invalid Payload")
+                const success: any = await this.models.creature.create(creature)
+                res.status(200)
+                res.send(`Creature created with id ${success.id}`)
+            } catch (e: any) {
+                next(e)
             }
-
-
         })
     }
 }

@@ -39,6 +39,7 @@ export default <SModel<any>>{
         name: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: true
         },
     },
     options: {

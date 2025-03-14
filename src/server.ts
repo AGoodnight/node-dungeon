@@ -1,12 +1,13 @@
 import express, { Request, Response } from "express"
 import chalk from "chalk"
-import { CreaturesAPI, router } from "./creatures/creatures.api"
+import { CreaturesAPI } from "./creatures/creatures.api"
 import { logger } from "./middleware/logger"
 import { Sequelize, Dialect } from "sequelize"
 import { ORM } from './dataLayer/orm'
 import creatureModels from './models/creature.model'
 import errorHandler from "./middleware/error-handler"
 
+// TODO: Export this later
 const dbConfig = {
     HOST: "localhost",
     USER: "superuser",
@@ -21,20 +22,32 @@ const dbConfig = {
     }
 };
 
-const app = express()
+// ORM ( data layer )
 export const dl = new ORM(dbConfig, [
     creatureModels
 ])
+
+// App Setup
+const app = express()
 app.use(express.json())
-app.use("/creatures", new CreaturesAPI(dl, router).router)
+app.use(express.urlencoded({ extended: true }));
+
+// Use Logger
 app.use(logger)
+
+// Use API
+app.use("/creatures", new CreaturesAPI(dl).router)
+
+// Use Error Handling
 app.use(errorHandler)
 
+// Base Route
 app.route("/")
     .get((_req: Request, res: Response) => {
         res.send("hello")
     })
 
+// Start App
 app.listen(8080, () => {
     console.log(chalk.magenta("Syncing Database..."))
     dl.sequelize.sync()

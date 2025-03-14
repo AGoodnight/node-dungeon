@@ -5,7 +5,6 @@ export function createCreatures(amt: number) {
     const creatures = [];
 
     for (let i = 0; i < amt; i++) {
-        const now = Date.now(); // Milliseconds since epoch
         const seed = Date.now(); // Using milliseconds as a simple seed
 
         const next = <Creature>{
