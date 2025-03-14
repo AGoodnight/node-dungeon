@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import { SModel } from "../dataLayer/model_repo.types";
+import { SModel } from "../model_repo/model_repo.types";
 
 export default <SModel<any>>{
     name: 'creature',

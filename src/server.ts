@@ -3,9 +3,9 @@ import chalk from "chalk"
 import { CreaturesAPI } from "./creatures/creatures.api"
 import { logger } from "./middleware/logger"
 import { Sequelize, Dialect } from "sequelize"
-import { ORM } from './dataLayer/orm'
+import { ORM } from './model_repo/orm'
 import creatureModels from './models/creature.model'
-import errorHandler from "./middleware/error-handler"
+import errorHandler from "./middleware/error_handler"
 
 // TODO: Export this later
 const dbConfig = {
