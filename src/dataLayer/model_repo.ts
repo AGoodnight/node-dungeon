@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
-import { modelDict, modelNames, SModel } from "./data_layer.types";
+import { modelDict, modelNames, SModel } from "./model_repo.types";
 
-export class DataLayer {
+export class ModelRepo {
 
     models: modelDict
 

@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
-import { DataLayer } from "./data_layer";
-import { SModel } from "./data_layer.types";
+import { ModelRepo } from "./model_repo";
+import { SModel } from "./model_repo.types";
 
 export class ORM {
     public sequelize;
@@ -19,6 +19,6 @@ export class ORM {
                 idle: config.pool.idle
             }
         })
-        this.dataModel = new DataLayer(this.sequelize, models)
+        this.dataModel = new ModelRepo(this.sequelize, models)
     }
 }

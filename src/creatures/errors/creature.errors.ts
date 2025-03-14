@@ -4,4 +4,6 @@ export const VALIDATION_ERRORS = {
     TYPE: 'Must be of type',
     PATTERN: 'Must match pattern',
     FORMAT: 'Must be of format',
+    MINIMUM: 'Must be at least',
+    MAXIMUM: 'Must be less than'
 };

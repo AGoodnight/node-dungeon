@@ -1,7 +1,7 @@
 import express, { NextFunction } from "express"
 import { Request, Response } from 'express'
 import { ORM } from "../dataLayer/orm"
-import { modelDict } from "../dataLayer/data_layer.types"
+import { modelDict } from "../dataLayer/model_repo.types"
 import { Creature } from "./creatures.types"
 import { creatureBodyValidatorMW, creatureQueryValidatorMW } from "./creature.validator"
 import { ValidationError } from "sequelize"

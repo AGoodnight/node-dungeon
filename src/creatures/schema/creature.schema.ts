@@ -13,7 +13,7 @@ export const creatureSchema: JSONSchemaType<Creature> = {
             type: "string",
             nullable: false,
             errorMessage: {
-                type: VALIDATION_ERRORS.TYPE,
+                type: VALIDATION_ERRORS.TYPE + ' string',
             }
         },
         name: {
@@ -23,15 +23,15 @@ export const creatureSchema: JSONSchemaType<Creature> = {
             maxLength: 30,
             errorMessage: {
                 type: VALIDATION_ERRORS.TYPE,
-                minLength: VALIDATION_ERRORS.MIN_LENGTH,
-                maxLength: VALIDATION_ERRORS.MIN_LENGTH,
+                minLength: VALIDATION_ERRORS.MIN_LENGTH + ' 3 characters',
+                maxLength: VALIDATION_ERRORS.MAX_LENGTH + ' 30 characters',
             }
         },
         alive: {
             type: "boolean",
             default: true,
             errorMessage: {
-                type: VALIDATION_ERRORS.TYPE,
+                type: VALIDATION_ERRORS.TYPE + ' boolean',
             }
         },
         hitpoints: {
@@ -41,8 +41,8 @@ export const creatureSchema: JSONSchemaType<Creature> = {
             minimum: 0,
             errorMessage: {
                 type: VALIDATION_ERRORS.TYPE,
-                minLength: VALIDATION_ERRORS.MIN_LENGTH,
-                maxLength: VALIDATION_ERRORS.MIN_LENGTH,
+                minimum: VALIDATION_ERRORS.MINIMUM + ' 0',
+                maximum: VALIDATION_ERRORS.MAXIMUM + ' 100',
             }
         },
         category: {
@@ -52,9 +52,9 @@ export const creatureSchema: JSONSchemaType<Creature> = {
             maxLength: 30,
             enum: CREATURE_CATEGORIES,
             errorMessage: {
-                type: VALIDATION_ERRORS.TYPE,
-                minLength: VALIDATION_ERRORS.MIN_LENGTH,
-                maxLength: VALIDATION_ERRORS.MIN_LENGTH,
+                type: VALIDATION_ERRORS.TYPE + ' string',
+                minLength: VALIDATION_ERRORS.MIN_LENGTH + ' 3 characters',
+                maxLength: VALIDATION_ERRORS.MIN_LENGTH + ' 30 characters',
                 enum: `Must be one of ${CREATURE_CATEGORIES}`
             }
         },
@@ -64,9 +64,9 @@ export const creatureSchema: JSONSchemaType<Creature> = {
             maximum: 20,
             minimum: 0,
             errorMessage: {
-                type: VALIDATION_ERRORS.TYPE,
-                maximum: VALIDATION_ERRORS.MIN_LENGTH,
-                minimum: VALIDATION_ERRORS.MIN_LENGTH,
+                type: VALIDATION_ERRORS.TYPE + ' integer',
+                minimum: VALIDATION_ERRORS.MINIMUM + ' 0',
+                maximum: VALIDATION_ERRORS.MAXIMUM + ' 20',
             }
         },
         x: {
