@@ -1,12 +1,13 @@
 export type Creature = {
     id: string;
-    alive: boolean;
-    hitpoints: number;
-    initiative: number;
-    x: number;
-    y: number;
-    category: string;
     name: string;
+    alive: boolean;
+    size: string;
+    type: string;
+    alignment: string;
+    hp: number;
+    initiative: number;
+    category: string;
 };
 
 export interface ICreature {

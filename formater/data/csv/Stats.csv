@@ -1,0 +1,803 @@
+Name,Align.,H0
+Aarakocra,NG,13
+Aboleth,L0,135
+Albino Dwarf Warrior,ANY,30
+Aldani (Lobsterfolk),LN,49
+Allip,N0,40
+Almiraj,U,3
+Ambush Drake,U,22
+"Angel, Deva",LG,136
+"Angel, 0lanetar",LG,200
+"Angel, Solar",LG,243
+"Animated Object, Armor",U,33
+"Animated Object, Broom of Attack",U,17
+"Animated Object, Flying Sword",U,17
+"Animated Object, Rug of Smothering",U,33
+"Animated Object, 0able",U,39
+Ankheg,U,39
+Assassin Vine,U,85
+"Assorted Beast, Aurochs",U,38
+"Assorted Beast, Cattle",U,15
+"Assorted Beast, Dolphin",U,11
+"Assorted Beast, Swarm of Rot Grubs",U,22
+Astral Dreadnought,U,297
+Atropal,N0,225
+Avatar of Death,N0,VARI0S
+Awakened Zurkhwood,U,59
+Azer,LN,39
+Baba Lysaga's Creeping Hut,U,263
+Balhannoth,C0,114
+Banderhobb,N0,84
+Banshee,C0,58
+Barghest,N0,90
+Basilisk,U,52
+Behir,N0,168
+Beholder,L0,180
+"Beholder, Death Kiss",N0,161
+"Beholder, Death 0yrant",L0,187
+"Beholder, Gauth",L0,67
+"Beholder, Gazer",N0,13
+"Beholder, Spectator",LN,39
+Berbalang,N0,38
+Black 0arth Guard,N0,39
+Black 0arth 0riest,N0,45
+"Black 0arth, Burrowshark",N0,82
+"Black 0arth, Sacred Stone 0onk",L0,22
+"Black 0arth, Stonemelder",N0,75
+"Blight, Needle",N0,11
+"Blight, 0ree",N0,149
+"Blight, 0wig",N0,4
+"Blight, Vine",N0,26
+Bodak,C0,58
+Boggle,CN,18
+Boneclaw,C0,127
+Bugbear,C0,27
+Bugbear Chief,C0,65
+Bulette,U,94
+Bullywug,N0,11
+Cadaver Collector,L0,189
+Cambion,ANY 0VIL,82
+Carrion Crawler,U,51
+Catoblepas,U,84
+Cave Fisher,U,58
+Centaur,NG,45
+Centaur 0ummy,L0,85
+Chimera,C0,114
+Chitine,C0,18
+"Chitine, Choldrith",C0,66
+Choker,C0,13
+Chuul,C0,93
+Chwinga,N,5
+Cloaker,CN,78
+"Clockwork, Bronze Scout",U,18
+"Clockwork, Iron Cobra",U,45
+"Clockwork, Oaken Bolter",U,58
+"Clockwork, Stone Defender",U,52
+Cockatrice,U,27
+Corpse Flower,C0,127
+Couatl,LG,97
+Crag Cat,U,34
+Cranium Rat,L0,2
+"Cranium Rat, Swarm",L0,36
+Crawling Claw,N0,2
+Crushing Wave 0riest,N0,52
+Crushing Wave Reaver,N0,22
+"Crushing Wave, Dark 0ide Knight",L0,58
+"Crushing Wave, Fathomer",N0,52
+"Crushing Wave, One-0yed Shiver",C0,49
+Cyclops,CN,138
+Darkling,CN,13
+Darkling 0lder,CN,27
+Darkmantle,U,22
+Death Knight,C0,180
+Deathlock,N0,36
+Deathlock 0astermind,N0,110
+Deathlock Wight,N0,37
+Decapus,U,75
+Deep Scion,N0,67
+Demilich,N0,80
+"Demon Lord, Baphomet",C0,275
+"Demon Lord, Demogorgon",C0,406
+"Demon Lord, Fraz-Urb'Luu",C0,337
+"Demon Lord, Graz'Zt",C0,346
+"Demon Lord, Juiblex",C0,350
+"Demon Lord, Orcus",C0,405
+"Demon Lord, Yeenoghu",C0,333
+"Demon Lord, Zuggtmoy",C0,304
+"Demon, Abyssal Wretch",C0,18
+"Demon, Alkilith",C0,157
+"Demon, Armanite",C0,84
+"Demon, Babau",C0,82
+"Demon, Balor",C0,262
+"Demon, Barlgura",C0,68
+"Demon, Bulezau",C0,52
+"Demon, Chasme",C0,84
+"Demon, Draegloth",C0,123
+"Demon, Dretch",C0,18
+"Demon, Dybbuk",C0,37
+"Demon, Glabrezu",C0,157
+"Demon, Goristro",C0,310
+"Demon, Hezrou",C0,136
+"Demon, 0anes",C0,9
+"Demon, 0arilith",C0,189
+"Demon, 0aurezhi",C0,88
+"Demon, 0aw",C0,33
+"Demon, 0olydeus",C0,216
+"Demon, Nabassu",C0,190
+"Demon, Nalfeshnee",L0,184
+"Demon, Quasit",C0,7
+"Demon, Rutterkin",C0,37
+"Demon, Shadow",C0,66
+"Demon, Shoosuva",C0,110
+"Demon, Sibriex",C0,150
+"Demon, Vrock",C0,104
+"Demon, Wastrilith",C0,157
+"Demon, Yochlol",C0,136
+Derro,C0,13
+Derro Savant,C0,36
+"Devil, Abishai, Black",L0,58
+"Devil, Abishai, Blue",L0,195
+"Devil, Abishai, Green",L0,187
+"Devil, Abishai, Red",L0,255
+"Devil, Abishai, White",L0,68
+"Devil, Amnizu",L0,202
+"Devil, Arch, Bael",L0,189
+"Devil, Arch, Geryon",L0,300
+"Devil, Arch, Hutijin",L0,200
+"Devil, Arch, 0oloch",L0,253
+"Devil, Arch, 0itivilus",L0,127
+"Devil, Arch, Zariel",L0,580
+"Devil, Barbed",L0,110
+"Devil, Bearded",L0,52
+"Devil, Bone",L0,142
+"Devil, Chain",L0,85
+"Devil, 0rinyes",L0,153
+"Devil, Hellfire 0ngine",L0,216
+"Devil, Horned",L0,178
+"Devil, Ice",L0,180
+"Devil, Imp",L0,10
+"Devil, Lemure",L0,13
+"Devil, 0erregon",L0,45
+"Devil, Narzugon",L0,112
+"Devil, Nupperibo",L0,11
+"Devil, Orthon",L0,105
+"Devil, 0it Fiend",L0,300
+"Devil, Spined",L0,22
+Devourer,C0,178
+"Dinosaur, Allosaurus",U,51
+"Dinosaur, Ankylosaurus",U,68
+"Dinosaur, Brontosaurus",U,121
+"Dinosaur, Deinonychus",U,26
+"Dinosaur, Dimetrodon",U,19
+"Dinosaur, Hadrosaurus",U,19
+"Dinosaur, 0lesiosaurus",U,68
+"Dinosaur, 0teranodon",U,13
+"Dinosaur, Quetzalcoatlus",U,30
+"Dinosaur, Stegosaurus",U,76
+"Dinosaur, 0riceratops",U,95
+"Dinosaur, 0yrannosaurus Rex",U,136
+"Dinosaur, Velociraptor",U,10
+Displacer Beast,L0,85
+Doppelganger,N,52
+Dracolich 0emplate,L0,0000
+"Dragon, Chromatic, Black, Adult",C0,195
+"Dragon, Chromatic, Black, Ancient",C0,367
+"Dragon, Chromatic, Black, Wyrmling",C0,33
+"Dragon, Chromatic, Black, Young",C0,127
+"Dragon, Chromatic, Blue, Adult",L0,225
+"Dragon, Chromatic, Blue, Ancient",L0,481
+"Dragon, Chromatic, Blue, Wyrmling",L0,52
+"Dragon, Chromatic, Blue, Young",L0,152
+"Dragon, Chromatic, Green, Adult",L0,207
+"Dragon, Chromatic, Green, Ancient",L0,385
+"Dragon, Chromatic, Green, Wyrmling",L0,38
+"Dragon, Chromatic, Green, Young",L0,136
+"Dragon, Chromatic, Red, Adult",C0,256
+"Dragon, Chromatic, Red, Ancient",C0,546
+"Dragon, Chromatic, Red, Wyrmling",C0,75
+"Dragon, Chromatic, Red, Young",C0,178
+"Dragon, Chromatic, White, Adult",C0,200
+"Dragon, Chromatic, White, Ancient",C0,333
+"Dragon, Chromatic, White, Wyrmling",C0,32
+"Dragon, Chromatic, White, Young",C0,133
+"Dragon, 0etallic, Brass, Adult",CG,172
+"Dragon, 0etallic, Brass, Ancient",CG,297
+"Dragon, 0etallic, Brass, Wyrmling",CG,16
+"Dragon, 0etallic, Brass, Young",CG,110
+"Dragon, 0etallic, Bronze, Adult",LG,212
+"Dragon, 0etallic, Bronze, Ancient",LG,444
+"Dragon, 0etallic, Bronze, Wyrmling",LG,32
+"Dragon, 0etallic, Bronze, Young",LG,142
+"Dragon, 0etallic, Copper, Adult",CG,184
+"Dragon, 0etallic, Copper, Ancient",CG,350
+"Dragon, 0etallic, Copper, Wyrmling",CG,22
+"Dragon, 0etallic, Copper, Young",CG,119
+"Dragon, 0etallic, Gold, Adult",LG,256
+"Dragon, 0etallic, Gold, Ancient",LG,546
+"Dragon, 0etallic, Gold, Wyrmling",LG,60
+"Dragon, 0etallic, Gold, Young",LG,178
+"Dragon, 0etallic, Silver, Adult",LG,243
+"Dragon, 0etallic, Silver, Ancient",LG,487
+"Dragon, 0etallic, Silver, Wyrmling",LG,45
+"Dragon, 0etallic, Silver, Young",LG,168
+"Dragon, 0urtle",N,341
+Dragonclaw,N0,16
+Dragonfang,N0,78
+Dragonsoul,N0,110
+Dragonwing,N0,32
+Dread Warrior,N0,37
+Drider,C0,123
+Drow,N0,13
+Drow Arachnomancer,C0,162
+Drow 0lite Warrior,N0,71
+Drow Favored Consort,N0,225
+Drow House Captain,N0,162
+Drow Inquisitor,N0,143
+Drow 0age,N0,45
+Drow 0atron 0other,N0,262
+Drow 0riestess of Lolth,N0,71
+Drow Shadowblade,N0,150
+Dryad,N,22
+Duergar,L0,26
+Duergar Darkhaft,L0,26
+Duergar Despot,L0,119
+Duergar Hammerer,L0,33
+Duergar Kavalrachni,L0,26
+Duergar Keeper of the Flame,L0,26
+Duergar 0ind 0aster,L0,39
+Duergar Screamer,L0,38
+Duergar Soulblade,L0,18
+Duergar Spy,L0,33
+Duergar Stone Guard,L0,39
+Duergar Warlord,L0,75
+Duergar Xarrorn,L0,26
+0blis,N0,26
+0idolon,ANY,63
+"0idolon, Sacred Statue",ANY,95
+"0ladrin, Autumn",CN,127
+"0ladrin, Spring",CN,127
+"0ladrin, Summer",CN,127
+"0ladrin, Winter",CN,127
+"0lder 0lemental, 0lder 0empest",N,264
+"0lder 0lemental, Leviathan",N,328
+"0lder 0lemental, 0hoenix",N,175
+"0lder 0lemental, Zaratan",N,307
+"0lemental 0yrmidon, Air",N,117
+"0lemental 0yrmidon, 0arth",N,127
+"0lemental 0yrmidon, Fire",N,123
+"0lemental 0yrmidon, Water",N,127
+"0lemental, Air",N,90
+"0lemental, 0arth",N,126
+"0lemental, Fire",N,102
+"0lemental, Water",N,114
+0mpyrean,CG OR N0,313
+0ternal Flame Guardian,C0,45
+0ternal Flame 0riest,N0,52
+"0ternal Flame, Flamewrath",C0,105
+"0ternal Flame, Razerblast",C0,112
+0ttercap,N0,44
+0ttin,C0,85
+Faerie Dragon,CG,14
+Firenewt Warlock of Imix,N0,33
+Firenewt Warrior,N0,22
+Flail Snail,U,52
+Flameskull,N0,40
+Flumph,LG,7
+Flying 0onkey,U,3
+Fomorian,C0,149
+Froghemoth,U,184
+"Fungus, Gas Spore",U,1
+"Fungus, Shrieker",U,13
+"Fungus, Violet",U,18
+Galeb Duhr,N,85
+Gargoyle,C0,52
+"Gargoyle, Giant Four-Armed",C0,147
+"Genie, Dao",N0,187
+"Genie, Djinni",CG,161
+"Genie, 0freeti",L0,200
+"Genie, 0arid",CN,229
+Geonid,N,26
+Ghost,ANY,45
+Ghoul,C0,22
+"Ghoul, Ghast",C0,36
+Giant Crayfish,U,45
+Giant Fly,U,19
+Giant Ice 0oad,N,52
+Giant Lightning 0el,U,42
+Giant Snapping 0urtle,U,75
+Giant Strider,N0,22
+Giant Subterranean Lizard,U,66
+"Giant, Cloud",NG/N0,200
+"Giant, Cloud, Smiling One",CN,262
+"Giant, Fire",L0,162
+"Giant, Fire, Dreadnought",L0,187
+"Giant, Frost",N0,138
+"Giant, Frost, 0verlasting One",C0,189
+"Giant, Hill",C0,105
+"Giant, Hill, 0outh of Grolantor",C0,105
+"Giant, Stone",N,126
+"Giant, Stone, Dreamwalker",CN,161
+"Giant, Storm",CG,230
+"Giant, Storm, Quintessent",CG,230
+Gibbering 0outher,N,67
+Giff,LN,60
+Girallon,U,59
+Githyanki Gish,L0,123
+Githyanki Kith'Rak,L0,180
+Githyanki Knight,L0,91
+Githyanki Supreme Commander,L0,187
+Githyanki Warrior,L0,49
+Githzerai Anarch,LN,144
+Githzerai 0nlightened,LN,112
+Githzerai 0onk,LN,38
+Githzerai Zerth,LN,84
+Gnoll,C0,22
+Gnoll Fang of Yeenoghu,C0,65
+Gnoll Flesh Gnawer,C0,22
+Gnoll Hunter,C0,22
+Gnoll 0ack Lord,C0,49
+Gnoll Witherling,C0,11
+"Gnoll, Flind",C0,127
+"Gnome, Deep (Svirfneblin)",NG,16
+Goblin,N0,7
+Goblin Boss,N0,21
+"Golem, Clay",U,133
+"Golem, Flesh",N,93
+"Golem, Iron",U,210
+"Golem, Stone",U,178
+Gorgon,U,114
+Gray Render,CN,189
+Grell,N0,55
+Grick,N,27
+Grick Alpha,N,75
+Griffon,U,59
+Grimlock,N0,11
+Grung,L0,11
+Grung 0lite Warrior,L0,49
+Grung Wildling,L0,27
+Guard Drake,U,52
+Guardian 0ortrait,U,22
+"Hag, Annis",C0,75
+"Hag, Bheur",C0,91
+"Hag, Green",N0,82
+"Hag, Night",N0,112
+"Hag, Sea",C0,52
+Half-Dragon 0emplate,ANY,0000
+Harpy,C0,38
+Hell Hound,L0,45
+Helmed Horror,N,60
+Hippogriff,U,19
+Hobgoblin,L0,11
+Hobgoblin Captain,L0,39
+Hobgoblin Devastator,L0,45
+Hobgoblin Iron Shadow,L0,32
+Hobgoblin Warlord,L0,97
+Homunculus,N,5
+Hook Horror,N,75
+Howler,C0,90
+Howling Hatred Initiate,N0,9
+Howling Hatred 0riest,N0,45
+"Howling Hatred, Feathergale Knight",L0,33
+"Howling Hatred, Hurricane",L0,33
+"Howling Hatred, Skyweaver",C0,44
+Hulking Crab,U,76
+Hydra,U,172
+Ice 0oad,N,32
+"Inevitable, 0arut",LN,432
+Intellect Devourer,L0,21
+Invisible Stalker,N,104
+Ixitxachitl,C0,18
+"Ixitxachitl, Vampiric",C0,44
+Jackalwere,C0,18
+Jaculi,U,16
+Kalka-Kylla,N,85
+Kamadan,U,67
+Kelpie,N0,67
+Kenku,CN,13
+Ki-Rin,LG,152
+Kobold,L0,5
+Kobold Dragonshield,L0,44
+Kobold Inventor,L0,13
+Kobold Scale Sorcerer,L0,27
+"Kobold, Winged",L0,7
+Korred,CN,102
+Kraken,C0,472
+"Kraken, 0alformed",C0,172
+Kruthik Hive Lord,U,102
+"Kruthik, Adult",U,39
+"Kruthik, Young",U,9
+Kuo-0oa,N0,13
+Kuo-0oa Archpriest,N0,97
+Kuo-0oa Whip,N0,65
+Lamia,C0,97
+Leucrotta,C0,67
+Lich,ANY 0VIL,135
+Lizard King/Queen,C0,78
+Lizardfolk,N,22
+Lizardfolk Shaman,N,27
+"Lycanthrope, Werebear",NG,135
+"Lycanthrope, Wereboar",N0,78
+"Lycanthrope, Wererat",L0,33
+"Lycanthrope, Wereraven",LG,31
+"Lycanthrope, Weretiger",N,120
+"Lycanthrope, Werewolf",C0,58
+0agmin,CN,9
+0anticore,L0,68
+0antrap,U,45
+0eazel,N0,35
+0edusa,L0,127
+0eenlock,N0,31
+"0ephit, Dust",N0,17
+"0ephit, Ice",N0,21
+"0ephit, 0agma",N0,22
+"0ephit, 0ud",N0,27
+"0ephit, Smoke",N0,22
+"0ephit, Steam",N0,21
+0erfolk,N,11
+0errow,C0,45
+0imic,N,58
+0ind Flayer,L0,71
+0ind Flayer Lich (Illithilich),ANY 0VIL,135
+"0ind Flayer, Alhoon",ANY 0VIL,120
+"0ind Flayer, 0lder Brain",L0,210
+"0ind Flayer, Ulitharid",L0,127
+0indwitness,L0,75
+0inotaur,C0,76
+"0isc. Creature, Ape",U,19
+"0isc. Creature, Awakened Shrub",U,10
+"0isc. Creature, Awakened 0ree",U,59
+"0isc. Creature, Axe Beak",U,19
+"0isc. Creature, Baboon",U,3
+"0isc. Creature, Badger",U,3
+"0isc. Creature, Bat",U,1
+"0isc. Creature, Black Bear",U,19
+"0isc. Creature, Blink Dog",LG,22
+"0isc. Creature, Blood Hawk",U,7
+"0isc. Creature, Boar",U,11
+"0isc. Creature, Brown Bear",U,34
+"0isc. Creature, Camel",U,15
+"0isc. Creature, Cat",U,2
+"0isc. Creature, Constrictor Snake",U,13
+"0isc. Creature, Crab",U,2
+"0isc. Creature, Crocodile",U,19
+"0isc. Creature, Death Dog",N0,39
+"0isc. Creature, Deer",U,4
+"0isc. Creature, Dire Wolf",U,37
+"0isc. Creature, Draft Horse",U,19
+"0isc. Creature, 0agle",U,3
+"0isc. Creature, 0lephant",U,76
+"0isc. Creature, 0lk",U,13
+"0isc. Creature, Flying Snake",U,5
+"0isc. Creature, Frog",U,1
+"0isc. Creature, Giant Ape",U,157
+"0isc. Creature, Giant Badger",U,13
+"0isc. Creature, Giant Bat",U,22
+"0isc. Creature, Giant Boar",U,42
+"0isc. Creature, Giant Centipede",U,4
+"0isc. Creature, Giant Constrictor Snake",U,60
+"0isc. Creature, Giant Crab",U,13
+"0isc. Creature, Giant Crocodile",U,85
+"0isc. Creature, Giant 0agle",NG,26
+"0isc. Creature, Giant 0lk",U,42
+"0isc. Creature, Giant Fire Beetle",U,4
+"0isc. Creature, Giant Frog",U,18
+"0isc. Creature, Giant Goat",U,19
+"0isc. Creature, Giant Hyena",U,45
+"0isc. Creature, Giant Lizard",U,19
+"0isc. Creature, Giant Octopus",U,52
+"0isc. Creature, Giant Owl",N,19
+"0isc. Creature, Giant 0oisonous Snake",U,11
+"0isc. Creature, Giant Rat",U,7
+"0isc. Creature, Giant Scorpion",U,52
+"0isc. Creature, Giant Sea Horse",U,16
+"0isc. Creature, Giant Shark",U,126
+"0isc. Creature, Giant Spider",U,26
+"0isc. Creature, Giant 0oad",U,39
+"0isc. Creature, Giant Vulture",N0,22
+"0isc. Creature, Giant Wasp",U,13
+"0isc. Creature, Giant Weasel",U,9
+"0isc. Creature, Giant Wolf Spider",U,11
+"0isc. Creature, Goat",U,4
+"0isc. Creature, Hawk",U,1
+"0isc. Creature, Hunter Shark",U,45
+"0isc. Creature, Hyena",U,5
+"0isc. Creature, Jackal",U,3
+"0isc. Creature, Killer Whale",U,90
+"0isc. Creature, Lion",U,26
+"0isc. Creature, Lizard",U,2
+"0isc. Creature, 0ammoth",U,126
+"0isc. Creature, 0astiff",U,5
+"0isc. Creature, 0ule",U,11
+"0isc. Creature, Octopus",U,3
+"0isc. Creature, Owl",U,1
+"0isc. Creature, 0anther",U,13
+"0isc. Creature, 0hase Spider",U,32
+"0isc. Creature, 0oisonous Snake",U,13
+"0isc. Creature, 0olar Bear",U,42
+"0isc. Creature, 0ony",U,11
+"0isc. Creature, Quipper",U,1
+"0isc. Creature, Rat",U,1
+"0isc. Creature, Raven",U,1
+"0isc. Creature, Reef Shark",U,22
+"0isc. Creature, Rhinoceros",U,45
+"0isc. Creature, Riding Horse",U,13
+"0isc. Creature, Saber-0oothed 0iger",U,52
+"0isc. Creature, Scorpion",U,1
+"0isc. Creature, Sea Horse",U,1
+"0isc. Creature, Spider",U,1
+"0isc. Creature, Swarm of Bats",U,22
+"0isc. Creature, Swarm of Insects",U,22
+"0isc. Creature, Swarm of 0oisonous Snakes",U,36
+"0isc. Creature, Swarm of Quippers",U,28
+"0isc. Creature, Swarm of Rats",U,24
+"0isc. Creature, Swarm of Ravens",U,24
+"0isc. Creature, 0iger",U,37
+"0isc. Creature, Vulture",U,5
+"0isc. Creature, Warhorse",U,19
+"0isc. Creature, Weasel",U,1
+"0isc. Creature, Winter Wolf",N0,75
+"0isc. Creature, Wolf",U,11
+"0isc. Creature, Worg",N0,26
+"0odron, Duodrone",LN,11
+"0odron, 0onodrone",LN,5
+"0odron, 0entadrone",LN,32
+"0odron, Quadrone",LN,22
+"0odron, 0ridrone",LN,16
+0ongrelfolk,ANY,26
+0orkoth,C0,130
+0ummy,L0,58
+0ummy Lord,L0,97
+0yconid Adult,LN,22
+0yconid Sovereign,LN,60
+0yconid Sprout,LN,7
+Naergoth Bladelord,N0,135
+"Naga, Bone",L0,58
+"Naga, Guardian",LG,127
+"Naga, Spirit",C0,75
+Nagpa,N0,187
+Neogi,L0,33
+Neogi Hatchling,L0,7
+Neogi 0aster,L0,71
+Neothelid,C0,325
+Nereid,ANY CHAO0IC,44
+Nightmare,N0,68
+Nightwalker,C0,297
+Nilbog,C0,7
+Nothic,N0,45
+"N0C, Abjurer",ANY,84
+"N0C, Acolyte",ANY,9
+"N0C, Apprentice Wizard",ANY,9
+"N0C, Archdruid",ANY,132
+"N0C, Archer",ANY,75
+"N0C, Archmage",ANY,99
+"N0C, Assassin",NO0 GOOD,78
+"N0C, Bandit",NO0 LAWFUL,11
+"N0C, Bandit Captain",NO0 LAWFUL,65
+"N0C, Bard",ANY,44
+"N0C, Berserker",ANY CHAO0IC,67
+"N0C, Blackguard",NO0 GOOD,153
+"N0C, Champion",ANY,143
+"N0C, Commoner",ANY,4
+"N0C, Conjurer",ANY,40
+"N0C, Cult Fanatic",NO0 GOOD,33
+"N0C, Cultist",NO0 GOOD,9
+"N0C, Diviner",ANY,67
+"N0C, Druid",ANY,27
+"N0C, 0nchanter",ANY,40
+"N0C, 0voker",ANY,66
+"N0C, Gladiator",ANY,112
+"N0C, Guard",ANY,11
+"N0C, Illusionist",ANY,38
+"N0C, Knight",ANY,52
+"N0C, Kraken 0riest",ANY,75
+"N0C, 0age",ANY,40
+"N0C, 0artial Arts Adept",ANY,60
+"N0C, 0aster 0hief",ANY,84
+"N0C, Necromancer",ANY,66
+"N0C, Noble",ANY,9
+"N0C, 0riest",ANY,27
+"N0C, Scout",ANY,16
+"N0C, Spy",ANY,27
+"N0C, Swashbuckler",NO0 LAWFUL,66
+"N0C, 0hug",NO0 GOOD,32
+"N0C, 0ransmuter",ANY,40
+"N0C, 0ribal Warrior",ANY,11
+"N0C, Veteran",ANY,58
+"N0C, War 0riest",ANY,117
+"N0C, Warlock of the Archfey",ANY,49
+"N0C, Warlock of the Fiend",ANY,78
+"N0C, Warlock of the Great Old One",ANY,91
+"N0C, Warlord",ANY,229
+Oblex Spawn,L0,18
+"Oblex, Adult",L0,75
+"Oblex, 0lder",L0,115
+Ogre,C0,59
+Ogre Battering Ram,C0,59
+Ogre Bolt Launcher,C0,59
+Ogre Chain Brute,C0,59
+Ogre Howdah,C0,59
+"Ogre, Half",ANY CHAO0IC,30
+Oni,L0,110
+Ooze 0aster,L0,138
+"Ooze, Black 0udding",U,85
+"Ooze, Gelatinous Cube",U,84
+"Ooze, Gray",U,22
+"Ooze, Ochre Jelly",U,45
+Orc,C0,15
+Orc Blade of Ilneval,C0,60
+Orc Claw of Luthic,C0,45
+Orc 0ye of Gruumsh,C0,45
+Orc Hand of Yurtrus,C0,30
+Orc Nurtured One of Yurtrus,C0,30
+Orc Red Fang of Shargaas,C0,52
+Orc War Chief,C0,93
+"Orc, Orog",C0,42
+"Orc, 0anarukk",C0,95
+Otyugh,N,114
+Owlbear,U,59
+0egasus,CG,59
+0eryton,C0,33
+0hantom Warrior,ANY,45
+0iercer,U,22
+0ixie,NG,1
+"0rince of Apocalypse, Imix",N0,325
+"0rince of Apocalypse, Ogremoch",N0,526
+"0rince of Apocalypse, Olhydra",N0,324
+"0rince of Apocalypse, Yan-C-BIn",N0,283
+0seudodragon,NG,7
+0terafolk,N0,26
+0urple Worm,U,247
+"0urple Worm, Wormling",U,42
+Quaggoth,CN,45
+Quickling,C0,10
+Rakshasa,L0,110
+Redcap,C0,45
+Remorhaz,U,195
+"Remorhaz, Young",U,93
+Retriever,L0,210
+Revenant,N,136
+Roc,U,248
+Roper,N0,93
+Rust 0onster,U,27
+Sahuagin,L0,22
+Sahuagin Baron,L0,76
+Sahuagin 0riestess,L0,33
+Salamander,N0,90
+"Salamander, Fire Snake",N0,22
+"Salamander, Frost",U,168
+Satyr,CN,31
+Scarecrow,C0,36
+Sea Lion,U,90
+Sea Spawn,N0,32
+Shadar-Kai Gloom Weaver,N,104
+Shadar-Kai Shadow Dancer,N,71
+Shadar-Kai Soul 0onger,N,123
+Shadow,C0,16
+Shadow Dragon 0emplate,C0,0000
+Shadow 0astiff,N0,33
+Shadow 0astiff Alpha,N0,48
+Shambling 0ound,U,136
+Shield Guardian,U,142
+Siren,CG,38
+Skeleton,L0,13
+"Skeleton, Giant",N0,115
+"Skeleton, 0inotaur",L0,67
+"Skeleton, Warhorse",L0,22
+Skulk,CN,18
+Skull Lord,L0,105
+Slaad 0adpole,CN,10
+"Slaad, Blue",CN,123
+"Slaad, Death",C0,170
+"Slaad, Gray",CN,127
+"Slaad, Green",CN,127
+"Slaad, Red",CN,93
+Slithering 0racker,C0,32
+"Sorrowsworn, 0he Angry",N0,255
+"Sorrowsworn, 0he Hungry",N0,225
+"Sorrowsworn, 0he Lonely",N0,112
+"Sorrowsworn, 0he Lost",N0,78
+"Sorrowsworn, 0he Wretched",N0,10
+Spawn of Kyuss,C0,76
+Specter,C0,22
+"Sphinx, Andro",LN,199
+"Sphinx, Gyno",LN,136
+Spore Servant 0emplate,U,0000
+Sprite,NG,2
+Star Spawn Grue,N0,17
+Star Spawn Hulk,C0,136
+Star Spawn Larva 0age,C0,168
+Star Spawn 0angler,C0,71
+Star Spawn Seer,N0,153
+"Steeder, Female",U,30
+"Steeder, 0ale",U,13
+Steel 0redator,L0,207
+Stirge,U,2
+Stone Cursed,L0,19
+Stone Juggernaut,U,157
+Strahd's Animated Armor,L0,112
+Su-0onster,C0,27
+Succubus/Incubus,N0,66
+Sword Wraith Commander,L0,127
+Sword Wraith Warrior,L0,45
+0abaxi Hunter,CG,40
+0abaxi 0instrel,CG,22
+0arrasque,U,676
+0ecuziztecatl,N,102
+0hayan Apprentice,NO0 GOOD,27
+0hayan Warrior,NO0 GOOD,52
+0horn Slinger,U,32
+0horny,N,27
+0hri-Kreen,CN,33
+0iamat,C0,615
+0iny Servant,U,10
+0lincalli,N0,85
+0opi,C0,13
+0ortle,LG,22
+0ortle Druid,LN,33
+0rapper,U,85
+0reant,CG,138
+0ressym,CN,5
+0ri-Flower Frond,U,11
+0roglodyte,C0,13
+0roglodyte Champion of Laogzed,C0,59
+0roll,C0,84
+"0roll, Dire",C0,172
+"0roll, Rot",C0,138
+"0roll, Spirit",C0,97
+"0roll, Venom",C0,94
+Umber Hulk,C0,93
+Unicorn,LG,67
+Uthgardt Shaman,N0,38
+Vampire,L0,144
+Vampire Spawn,N0,82
+Vampiric 0ist,C0,30
+Vargouille,C0,13
+Vegepygmy,N,9
+Vegepygmy Chief,N,33
+Water Weird,N,58
+White 0aw,CN,217
+Wight,N0,45
+Will-O'-Wisp,C0,22
+Wood Woad,LN,75
+Wraith,N0,67
+Wyvern,U,110
+Xorn,N,73
+Xvart,C0,7
+Xvart Speaker,C0,7
+Xvart Warlock of Raxivort,C0,22
+Yakfolk 0riest,N0,52
+Yakfolk Warrior,N0,60
+Yellow 0usk Creeper,U,60
+Yellow 0usk Zombie,U,33
+Yeth Hound,N0,51
+Yeti,C0,51
+"Yeti, Abominable",C0,137
+Yuan-0i Abomination,N0,127
+Yuan-0i Anathema,N0,189
+Yuan-0i Broodguard,N0,45
+Yuan-0i 0alison,N0,66
+Yuan-0i 0ind Whisperer,N0,71
+Yuan-0i Nightmare Speaker,N0,71
+Yuan-0i 0it 0aster,N0,88
+Yuan-0i 0ureblood,N0,40
+"Yugoloth, Arcana",N0,104
+"Yugoloth, Cano",N0,120
+"Yugoloth, Dhergo",N0,119
+"Yugoloth, Hydro",N0,135
+"Yugoloth, 0erreno",N0,40
+"Yugoloth, 0ezzo",N0,75
+"Yugoloth, Nyca",N0,123
+"Yugoloth, Oino",N0,126
+"Yugoloth, Ultro",N0,153
+"Yugoloth, Yagno",N0,147
+Zombie,N0,22
+"Zombie, Ankylosaurus",U,68
+"Zombie, Beholder",N0,93
+"Zombie, Girallon",C0,59
+"Zombie, Greater",N0,97
+"Zombie, Ogre",N0,93
+"Zombie, Strahd",U,30
+"Zombie, 0yrannosaurus",U,136
+Zorbo,U,27
+"Zuggtmoy, Bridesmaid",C0,22
+"Zuggtmoy, Chamberlain",C0,45

@@ -34,7 +34,19 @@ export const creatureSchema: JSONSchemaType<Creature> = {
                 type: VALIDATION_ERRORS.TYPE + ' boolean',
             }
         },
-        hitpoints: {
+        size: {
+            type: "string",
+            default: "medium"
+        },
+        type: {
+            type: "string",
+            default: "medium"
+        },
+        alignment: {
+            type: "string",
+            default: "medium"
+        },
+        hp: {
             type: "integer",
             default: 10,
             maximum: 100,
@@ -69,20 +81,6 @@ export const creatureSchema: JSONSchemaType<Creature> = {
                 maximum: VALIDATION_ERRORS.MAXIMUM + ' 20',
             }
         },
-        x: {
-            type: "integer",
-            default: 0,
-            errorMessage: {
-                type: VALIDATION_ERRORS.TYPE,
-            }
-        },
-        y: {
-            type: "integer",
-            default: 0,
-            errorMessage: {
-                type: VALIDATION_ERRORS.TYPE,
-            }
-        }
     },
     required: [
         "name",

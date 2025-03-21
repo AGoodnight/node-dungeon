@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Creature",
+    "description": "A Creature",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "alive": {
+            "type": "boolean"
+        },
+        "hp": {
+            "type": "integer"
+        },
+        "category": {
+            "type": "string"
+        },
+        "initiative": {
+            "type": "integer"
+        },
+        "x": {
+            "type": "integer"
+        },
+        "y": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "name",
+        "category"
+    ]
+}

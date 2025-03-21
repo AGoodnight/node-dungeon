@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from "express"
 import addFormats from 'ajv-formats';
 import ajvErrors from 'ajv-errors';
 import { creatureSchema, CreatureSchemaKeys } from "./schema/creature.schema";
-import { parseAJVErrors } from "../errors/parser";
+import { parseAJVErrors } from "../../errors/parser";
 
 const validator = new Ajv({
     allErrors: true

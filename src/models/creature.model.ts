@@ -13,7 +13,7 @@ export default <SModel<any>>{
             allowNull: false,
             defaultValue: true
         },
-        hitpoints: {
+        hp: {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 10

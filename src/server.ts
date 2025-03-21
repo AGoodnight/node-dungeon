@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express"
 import chalk from "chalk"
-import { CreaturesAPI } from "./creatures/creatures.api"
+import { CreaturesAPI } from "./api/creatures/creatures.api"
 import { logger } from "./middleware/logger"
 import { Sequelize, Dialect } from "sequelize"
 import { ORM } from './model_repo/orm'

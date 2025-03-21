@@ -11,24 +11,33 @@
         "alive": {
             "type": "boolean"
         },
-        "hitpoints": {
-            "type": "integer"
-        },
-        "category": {
+        "size": {
             "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "alignment": {
+            "type": "string"
+        },
+        "hp": {
+            "type": "integer"
         },
         "initiative": {
             "type": "integer"
         },
-        "x": {
-            "type": "integer"
-        },
-        "y": {
-            "type": "integer"
+        "category": {
+            "type": "string"
         }
     },
     "required": [
         "name",
+        "alive",
+        "size",
+        "type",
+        "alignment",
+        "hp",
+        "initiative",
         "category"
     ]
 }
