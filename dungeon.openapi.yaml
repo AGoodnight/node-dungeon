@@ -1,0 +1,9 @@
+openapi: 3.1.1
+info:
+  version: 1.0.0
+  title: dungeon spec
+paths:
+  /creature:
+    $ref: ./src/controllers/creatures/schema/creatures.openapi.yaml
+  /skills:
+    $ref: ./src/controllers/skills/schema/skills.openapi.yaml

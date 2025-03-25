@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "CreaturePostResponse",
+    "description": "A Creature",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid"
+        }
+    },
+    "required": [
+        "id"
+    ]
+}

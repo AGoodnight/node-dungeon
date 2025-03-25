@@ -3,8 +3,8 @@ import { ModelRepo } from "./model_repo";
 import { SModel } from "./model_repo.types";
 
 export class ORM {
-    public sequelize;
-    public dataModel;
+    public sequelize: Sequelize;
+    public dataModel: ModelRepo;
     constructor(config: any, models: SModel<any>[]) {
         this.sequelize = new Sequelize(
             config.DB,

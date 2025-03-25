@@ -1,0 +1,73 @@
+openapi: 3.1.1
+info:
+  version: 1.0.0
+  title: creatures spec
+paths:
+  /creature:
+    summary: Retrieve a specific creature
+    post:
+      summary: "post a new creature"
+      tags:
+        - creature
+      requestBody:
+        $ref: "#/components/requestBodies/AddCreature"
+      responses:
+        "200":
+          $ref: "#/components/responses/AddCreature"
+        "400":
+          $ref: "#/components/responses/Errors"
+  /creature/{id}:
+    summary: Retrieve a specific creature
+    get:
+      summary: get creatures
+      tags:
+        - creature
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+      requestBody:
+        $ref: "#/components/requestBodies/GetCreatures"
+      responses:
+        "200":
+          $ref: "#/components/responses/GetCreatures"
+        "400":
+          $ref: "#/components/responses/Errors"
+servers:
+  - url: localhost:8443
+    description: The primary server
+components:
+  requestBodies:
+    GetCreatures:
+      description: Get a creature
+      content:
+        application/json:
+          schema:
+            $ref: creature-get.schema.json
+    AddCreature:
+      description: Add a creature
+      content:
+        application/json:
+          schema:
+            $ref: creature-post.schema.json
+  responses:
+    AddCreature:
+      description: successful addition of creature
+      content:
+        application/json:
+          schema:
+            $ref: creature-post-response.json
+    GetCreatures:
+      description: Get a creature
+      content:
+        application/json:
+          schema:
+            $ref: creature-get.schema.json
+    Errors:
+      description: "generic error"
+      content:
+        application/json:
+          schema:
+            $ref: ../errors/errors.schema.json

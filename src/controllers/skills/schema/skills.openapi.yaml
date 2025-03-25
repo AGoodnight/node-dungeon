@@ -1,0 +1,23 @@
+openapi: 3.1.1
+info:
+  version: 1.0.0
+  title: creatures spec
+paths:
+  /skills{id}:
+    get:
+      summary: "get a collection of skills by either a creature id or the skill id"
+      tags:
+        - skill
+      requestBody:
+        $ref: "#/components/requestBodies/GetSkill"
+components:
+  requestBodies:
+    GetSkill:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: skill-get.schema.json
+  responses:
+    Errors:
+      $ref: ../errors/errors.schema.json

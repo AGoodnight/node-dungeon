@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/product.schema.json",
-    "title": "Creature",
+    "title": "CreaturePost",
     "description": "A Creature",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "name": {
             "type": "string"
@@ -18,12 +18,6 @@
             "type": "string"
         },
         "initiative": {
-            "type": "integer"
-        },
-        "x": {
-            "type": "integer"
-        },
-        "y": {
             "type": "integer"
         }
     },

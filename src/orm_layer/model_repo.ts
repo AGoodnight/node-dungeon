@@ -7,6 +7,10 @@ export class ModelRepo {
 
     constructor(private db: Sequelize, private modelDeclarations: SModel<any>[]) {
         this.models = {} as modelDict
+        this.defineModels()
+    }
+
+    defineModels() {
         for (let m of this.modelDeclarations) {
             if (!Object.keys(modelNames).includes(m.name)) {
                 return

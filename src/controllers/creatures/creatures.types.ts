@@ -1,14 +1,14 @@
-export type Creature = {
+export interface BaseCreature {
     id: string;
     name: string;
     alive: boolean;
-    size: string;
-    type: string;
-    alignment: string;
     hp: number;
     initiative: number;
     category: string;
 };
+
+interface Monster extends BaseCreature {
+}
 
 export interface ICreature {
     Summon(): void;

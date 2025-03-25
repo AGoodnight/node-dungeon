@@ -1,12 +1,12 @@
 import { JSONSchemaType } from "ajv"
-import { Creature } from "../creatures.types"
+import { BaseCreature } from "../creatures.types"
 import { VALIDATION_ERRORS } from "../errors/creature.errors";
 
 export const CREATURE_CATEGORIES = ["baddie", "player", "npc"]
 
-export const creatureSchema: JSONSchemaType<Creature> = {
-    title: "Creature",
-    description: "A Creature",
+export const creatureSchema: JSONSchemaType<BaseCreature> = {
+    title: "BaseCreature",
+    description: "A BaseCreature",
     type: "object",
     properties: {
         id: {

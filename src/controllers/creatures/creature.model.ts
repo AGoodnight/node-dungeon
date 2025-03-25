@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import { SModel } from "../model_repo/model_repo.types";
+import { SModel } from "../../orm_layer/model_repo.types";
 
 export default <SModel<any>>{
     name: 'creature',
@@ -7,6 +7,11 @@ export default <SModel<any>>{
         id: {
             type: DataTypes.UUID, // Or DataTypes.STRING, depending on your ID generation
             primaryKey: true,
+        },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true
         },
         alive: {
             type: DataTypes.BOOLEAN,
@@ -23,24 +28,10 @@ export default <SModel<any>>{
             allowNull: false,
             defaultValue: 0
         },
-        x: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            defaultValue: 0
-        },
-        y: {
-            type: DataTypes.INTEGER,
-            defaultValue: 0
-        },
         category: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true
-        },
+        }
     },
     options: {
         tableName: 'creatures',

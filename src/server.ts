@@ -1,11 +1,14 @@
+import 'reflect-metadata';
 import express, { Request, Response } from "express"
 import chalk from "chalk"
-import { CreaturesAPI } from "./api/creatures/creatures.api"
+import { CreaturesController } from "./controllers/creatures/creatures.controller"
 import { logger } from "./middleware/logger"
-import { Sequelize, Dialect } from "sequelize"
-import { ORM } from './model_repo/orm'
-import creatureModels from './models/creature.model'
+import { Dialect } from "sequelize"
+import { ORM } from './orm_layer/orm'
+import creatureModels from './controllers/creatures/creature.model'
 import errorHandler from "./middleware/error_handler"
+import { creatureRoutes } from "./controllers/creatures/creatures.routes"
+import { initialize } from "express-openapi"
 
 // TODO: Export this later
 const dbConfig = {
@@ -22,10 +25,18 @@ const dbConfig = {
     }
 };
 
-// ORM ( data layer )
-export const dl = new ORM(dbConfig, [
-    creatureModels
-])
+// ORM
+// For use by our controllers
+export const orm = new ORM(dbConfig, [creatureModels])
+
+// Controller Initialization
+export const controllers = {
+    CreaturesController: new CreaturesController(orm)
+}
+
+export const openAPIExpress = initialize({
+
+})
 
 // App Setup
 const app = express()
@@ -36,7 +47,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(logger)
 
 // Use API
-app.use("/creatures", new CreaturesAPI(dl).router)
+// Factories return routes using the controllers
+app.use("/creatures", creatureRoutes(controllers))
 
 // Use Error Handling
 app.use(errorHandler)
@@ -48,8 +60,8 @@ app.route("/")
     })
 
 // Start App
-app.listen(8080, () => {
+app.listen(8443, () => {
     console.log(chalk.magenta("Syncing Database..."))
-    dl.sequelize.sync()
-    console.log(chalk.green("Running Server at localhost:8080"))
+    orm.sequelize.sync()
+    console.log(chalk.green("Running Server at localhost:8443"))
 })

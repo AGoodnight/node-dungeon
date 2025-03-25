@@ -1,11 +1,10 @@
 {
     "compilerOptions": {
+        "rootDir": "./src",
         "target": "es2016",
-        "module": "esnext",
-        "moduleResolution": "bundler",
+        "module": "commonjs",
         "resolveJsonModule": true,
         "outDir": "./dist",
-        "rootDir": "./src",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
@@ -14,9 +13,6 @@
         "noUncheckedIndexedAccess": true,
         "forceConsistentCasingInFileNames": true
     },
-    "include": [
-        "src"
-    ],
     "exclude": [
         "node_modules"
     ]
