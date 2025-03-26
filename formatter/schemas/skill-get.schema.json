@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Skill",
+    "description": "A Skill",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "creature": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "skill": {
+            "type": "string"
+        }
+    },
+    "oneOf": [
+        {
+            "required": "id"
+        },
+        {
+            "required": "creature"
+        }
+    ]
+}

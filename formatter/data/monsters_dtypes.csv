@@ -1,0 +1,2 @@
+Name,Size,Type,Align.,AC,HP,Speeds,STR,DEX,CON,INT,WIS,CHA,Sav. Throws,Skills,WRI,Senses,Languages,CR,Additional,Font,Additional Info,Author
+str,str,str,str,int,int,str,int,int,int,int,int,int,str,str,str,str,str,float,str,str,str,str

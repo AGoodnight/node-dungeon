@@ -1,24 +1,23 @@
 import { JSONSchemaType } from "ajv"
-import { BaseCreature } from "../creatures.types"
-import { VALIDATION_ERRORS } from "../errors/creature.errors";
+import { CreatureGet } from "./_types/creatures.types"
+import { VALIDATION_ERRORS } from "./partials/errors.partials";
 
 export const CREATURE_CATEGORIES = ["baddie", "player", "npc"]
 
-export const creatureSchema: JSONSchemaType<BaseCreature> = {
+export const creatureGetSchema: JSONSchemaType<CreatureGet> = {
     title: "BaseCreature",
     description: "A BaseCreature",
     type: "object",
     properties: {
         id: {
             type: "string",
-            nullable: false,
             errorMessage: {
                 type: VALIDATION_ERRORS.TYPE + ' string',
             }
         },
         name: {
             type: "string",
-            nullable: false,
+            nullable: true,
             minLength: 3,
             maxLength: 30,
             errorMessage: {
@@ -29,25 +28,14 @@ export const creatureSchema: JSONSchemaType<BaseCreature> = {
         },
         alive: {
             type: "boolean",
-            default: true,
+            nullable: true,
             errorMessage: {
                 type: VALIDATION_ERRORS.TYPE + ' boolean',
             }
         },
-        size: {
-            type: "string",
-            default: "medium"
-        },
-        type: {
-            type: "string",
-            default: "medium"
-        },
-        alignment: {
-            type: "string",
-            default: "medium"
-        },
         hp: {
             type: "integer",
+            nullable: true,
             default: 10,
             maximum: 100,
             minimum: 0,
@@ -59,7 +47,7 @@ export const creatureSchema: JSONSchemaType<BaseCreature> = {
         },
         category: {
             type: "string",
-            nullable: false,
+            nullable: true,
             minLength: 3,
             maxLength: 30,
             enum: CREATURE_CATEGORIES,
@@ -72,7 +60,7 @@ export const creatureSchema: JSONSchemaType<BaseCreature> = {
         },
         initiative: {
             type: "integer",
-            default: 0,
+            nullable: true,
             maximum: 20,
             minimum: 0,
             errorMessage: {
@@ -82,10 +70,7 @@ export const creatureSchema: JSONSchemaType<BaseCreature> = {
             }
         },
     },
-    required: [
-        "name",
-        "category"
-    ]
+    required: ["id"]
 };
 
-export const CreatureSchemaKeys = (creatureSchema.properties) ? Object.keys(creatureSchema.properties) : []
+export const CreatureSchemaKeys = (creatureGetSchema.properties) ? Object.keys(creatureGetSchema.properties) : []

@@ -1,9 +1,10 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/product.schema.json",
-    "title": "Creature",
+    "$id": "creaturepost",
+    "title": "CreaturePost",
     "description": "A Creature",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "name": {
             "type": "string"
@@ -11,33 +12,18 @@
         "alive": {
             "type": "boolean"
         },
-        "size": {
-            "type": "string"
-        },
-        "type": {
-            "type": "string"
-        },
-        "alignment": {
-            "type": "string"
-        },
         "hp": {
-            "type": "integer"
-        },
-        "initiative": {
             "type": "integer"
         },
         "category": {
             "type": "string"
+        },
+        "initiative": {
+            "type": "integer"
         }
     },
     "required": [
         "name",
-        "alive",
-        "size",
-        "type",
-        "alignment",
-        "hp",
-        "initiative",
         "category"
     ]
 }

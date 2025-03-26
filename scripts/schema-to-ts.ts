@@ -1,6 +1,6 @@
 import { compile, compileFromFile } from 'json-schema-to-typescript'
-import { mkdirSync, readdir, readdirSync, readFileSync, writeFileSync } from 'fs'
-import { resolve } from 'path'
+import { copyFile, mkdirSync, readdir, readdirSync, readFileSync, writeFileSync } from 'fs'
+import { resolve, basename } from 'path'
 import chalk from 'chalk';
 
 type ModuleDeclaration = {
@@ -13,7 +13,7 @@ const controllerModules: ModuleDeclaration[] = [
     {
         inputDir: "src/controllers/creatures/schema",
         outputDir: "src/controllers/creatures/_types",
-        outputName: "creatures"
+        outputName: "creatures",
     },
     {
         inputDir: "src/controllers/skills/schema",
@@ -22,7 +22,18 @@ const controllerModules: ModuleDeclaration[] = [
     }
 ]
 
+const formaterOutpuDir = "formatter/schemas"
+
 controllerModules.forEach((module) => processModule(module))
+
+
+async function copyFilesToFormatterSchemas(filePaths: string[]) {
+    for (let _p of filePaths) {
+        await copyFile(_p, `${formaterOutpuDir}/${basename(_p)}`, () => {
+            console.log(chalk.yellow(`Copying file to ${formaterOutpuDir}/${basename(_p)}`))
+        })
+    }
+}
 
 function processModule(module: ModuleDeclaration) {
     readdir(module.inputDir, (_e, f) => {
@@ -35,6 +46,7 @@ function processModule(module: ModuleDeclaration) {
             _paths.push(`${module.inputDir}/${name}`)
         })
         readFiles(module, _paths)
+        copyFilesToFormatterSchemas(_paths)
     });
 }
 
@@ -61,8 +73,8 @@ async function readFiles(module: ModuleDeclaration, paths: string[]) {
 
     try {
         let final = (await paths.reduce<Promise<string[]>>(reducer, Promise.resolve([] as string[]))).join("")
-        writeFileSync(`${module.outputDir}/${module.outputName}.ts`, final)
-        console.log(chalk.green(`Created ${module.outputName}.ts`))
+        writeFileSync(`${module.outputDir}/${module.outputName}.types.ts`, final)
+        console.log(chalk.green(`Created ${module.outputName}.types.ts`))
     } catch (e: any) {
         console.log(e.message)
         process.exit()

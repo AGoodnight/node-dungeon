@@ -2,13 +2,13 @@ import Ajv from "ajv"
 import { NextFunction, Request, Response } from "express"
 import addFormats from 'ajv-formats';
 import ajvErrors from 'ajv-errors';
-import { creatureSchema, CreatureSchemaKeys } from "./schema/creature.schema";
+import { creatureGetSchema, CreatureSchemaKeys } from "./creature.ajv.schema";
 import { parseAJVErrors } from "../../errors/parser";
 
 const validator = new Ajv({
     allErrors: true
 })
-validator.addSchema(creatureSchema, "creature")
+validator.addSchema(creatureGetSchema, "creature")
 addFormats(validator);
 ajvErrors(validator);
 

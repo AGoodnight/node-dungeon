@@ -2,7 +2,7 @@ import { NextFunction } from "express"
 import { Request, Response } from 'express'
 import { ORM } from "../../orm_layer/orm"
 import { modelDict } from "../../orm_layer/model_repo.types"
-import { BaseCreature } from "./creatures.types"
+import { CreatureGet, CreaturePost, CreaturePostResponse } from "./_types/creatures.types"
 
 export class CreaturesController {
     models: modelDict
@@ -43,7 +43,7 @@ export class CreaturesController {
     async createCreature(req: Request, res: Response, next: NextFunction) {
         try {
             const body = req.body
-            const creature = <BaseCreature>{
+            const creature = <CreaturePost>{
                 id: crypto.randomUUID(),
                 ...body
             }
